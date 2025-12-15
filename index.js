@@ -1,4 +1,3 @@
-// DOM Elements
 const currentDisplay = document.getElementById('current');
 const previousDisplay = document.getElementById('previous');
 const numberButtons = document.querySelectorAll('.number');
