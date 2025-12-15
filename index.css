@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.calculator {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.display {
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    min-height: 80px;
+}
+
+.previous {
+    color: #666;
+    font-size: 14px;
+    min-height: 20px;
+    overflow: hidden;
+}
+
+.current {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    text-align: right;
+    color: #333;
+    outline: none;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 15px 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.number {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.number:hover {
+    background: #e9ecef;
+}
+
+.operator {
+    background: #4dabf7;
+    color: white;
+}
+
+.operator:hover {
+    background: #339af0;
+}
+
+.clear {
+    background: #6c757d;
+    color: white;
+}
+
+.clear:hover {
+    background: #5a6268;
+}
+
+.equals {
+    background: #28a745;
+    color: white;
+    grid-column: span 1;
+}
+
+.equals:hover {
+    background: #218838;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.btn-reset {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-reset:hover {
+    background: #c82333;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .calculator {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 12px 5px;
+        font-size: 16px;
+    }
+    
+    .current {
+        font-size: 24px;
+    }
+}
